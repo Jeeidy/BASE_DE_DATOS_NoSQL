@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <!--nav-->
+<nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BASE DE DATOS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+       
+        <div class="offcanvas-body">
+            <ul class="navbar-nav fs-5 justify-content-center">
+              <li class="nav-item p-3 py-md-1"><a href="documentales.html" class="nav-link">Bases de Datos Documentales</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="clave-valor.html" class="nav-link">Bases de Datos Clave-Valor</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="columnas.html" class="nav-link">Bases de Datos Orientadas a Columnas</a></li>
+              <li class="nav-item p-3 py-md-1"><a href="grafos.html" class="nav-link">Bases de Datos de Grafos</a></li>
+            </ul>
+
+            <div class="sidebar-footer d-flex justify-content-center-start">
+                <a href="index.html" class="btn btn-danger">
+                    Salir
+                </a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </nav>
+  <!--nav-->
+   <br><br><br>
+
+   <p class="h1 text-center">BASE DE DATOS DOCUMENTALES</p><br>
+
+   <!--concepto-->
+   <div class="container text-center">
+    <div class="row">
+      <div class="col-8">
+        Una base de datos de documentos es un tipo de base de datos NoSQL que se puede usar para almacenar y consultar datos como documentos 
+        tipo JSON. La notación de objetos de JavaScript (JSON) es un formato abierto de intercambio de datos legible tanto por los humanos como 
+        por las máquinas. Los desarrolladores pueden usar documentos JSON en su código y guardarlos directamente en la base de datos de 
+        documentos. La naturaleza flexible, semiestructurada y jerárquica de los documentos y las bases de datos de documentos permite que 
+        evolucionen según las necesidades de las aplicaciones.
+      </div>
+      <div class="col-4">
+        <img src="img/documental.png" class="img-fluid" alt="...">
+      </div>
+    </div>
+  </div>
+  <!--concepto-->
+
+  <br><br>
+   <!--caracteristicas-->
+   <div class="container text-center">
+    <div class="row">
+      <div class="col-4">
+        <img src="img/caracteristica doc.png" class="img-fluid" alt="...">
+      </div>
+      <div class="col-8">
+        <h2>Caracteristicas</h2>
+        <p>
+          Las bases de datos documentales son capaces de almacenar información en diferentes formatos sin una estructura definida. En cualquier caso, lo habitual es que los documentos empleen un formato de archivo, mientras que los datos contenidos sí utilicen una estructura fija. <br><br>
+A pesar de que su estructura es completamente distinta, estas bases de datos permiten realizar las mismas operaciones básicas que las bases de datos relacionales, esto es, añadir, actualizar o eliminar información, además de realizar las pertinentes consultas por parte del usuario. <br><br>
+
+A diferencia de las bases de datos relacionales, en las bases de datos orientadas a documentos no es necesario recorren todas las columnas de una tabla a la hora de realizar una consulta. En lugar de ello se asigna un identificador único a cada documento, de manera que a la hora de hacer una consulta se comprueba el mismo documento. Este identificador puede ser de diferentes tipos, por ejemplo, una ruta completa o una cadena de caracteres. <br> <br>
+
+Gracias a este funcionamiento, las bases de datos documentales se emplean para el almacenamiento y consulta de datos semiestructurados, los cuáles no tienen un esquema previamente definido y que serían difíciles (o incluso imposibles) de gestionar en las tradicionales bases relacionales. <br><br>
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--caracteristicas-->
+
+
+  <h2>Funcionamiento</h2>
+  <ol class="list-group list-group-numbered center">
+    <li class="list-group-item">Estructura Flexible: Los datos se almacenan en documentos (generalmente en formato JSON o BSON), lo que permite incluir diferentes tipos de datos y estructuras dentro del mismo documento. Por ejemplo, un documento puede contener un campo de texto, una lista, o incluso otro documento anidado.</li>
+    <li class="list-group-item">Gestión de Datos Embebidos: Los documentos pueden contener datos embebidos, lo cual facilita la gestión de datos relacionados sin necesidad de múltiples tablas o uniones complejas, como en las bases de datos relacionales.</li>
+    <li class="list-group-item">Consultas y Actualizaciones: Las bases de datos documentales permiten realizar consultas y actualizaciones sobre cualquier parte de un documento. Esto incluye la capacidad de buscar documentos basados en campos específicos y actualizar únicamente esos campos sin afectar el resto del documento.</li>
+    <li class="list-group-item">Desarrollo Ágil: Debido a su naturaleza flexible, las bases de datos documentales son ideales para entornos de desarrollo ágil y aplicaciones con requisitos cambiantes. Los desarrolladores pueden modificar la estructura de los documentos sin necesidad de realizar cambios significativos en el esquema de la base de datos.</li>
+  </ol>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
